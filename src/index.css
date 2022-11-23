@@ -1,0 +1,69 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.sort-list {
+  display: flex;
+  align-items: center;
+}
+
+.sort-item {
+  padding: 10px 20px;
+  font-weight: 600;
+  color: rgb(93, 93, 93);
+  border: 1px solid rgb(93, 93, 93);
+  cursor: pointer;
+}
+
+.sort-item + .sort-item {
+  margin-left: 5px;
+}
+
+.sort-item.active {
+  color: #ffffff;
+  background-color: rgb(93, 93, 93);
+}
+
+.project-list{
+  column-count: 3;
+}
+
+.project-item {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.project-item img {
+  width: 100%;
+}
